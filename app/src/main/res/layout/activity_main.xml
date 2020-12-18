@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapp.nilesh.connect3game.MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="371dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:onClick="click"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/cross1"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:tag="1"/>
+
+        <ImageView
+            android:id="@+id/cross2"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:tag="2"/>
+
+        <ImageView
+            android:id="@+id/zero"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="08dp"
+            android:onClick="click"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/cross3"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="08dp"
+            android:layout_marginTop="13dp"
+
+            android:onClick="click"
+            android:tag="4"/>
+
+        <ImageView
+            android:id="@+id/cross4"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:tag="5"/>
+        <ImageView
+            android:id="@+id/cross5"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:tag="6"/>
+
+        <ImageView
+            android:id="@+id/cross6"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:onClick="click"
+            android:tag="7"/>
+
+        <ImageView
+            android:id="@+id/cross7"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:tag="8"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playagain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:onClick="playagain"
+        android:text="play again"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+
+</android.support.constraint.ConstraintLayout>
